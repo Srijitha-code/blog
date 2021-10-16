@@ -1,0 +1,8 @@
+server
+{
+ location /include{
+     return 200 "$host/n$uri/n$args";
+}
+}
+
+return 200 $host/n$uri/n$args;
